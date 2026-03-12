@@ -1,4 +1,5 @@
 Funcion mostrar_menu
+	mostrar_separador
 	Escribir "Bienvenidos a la calculadora, ingrese"
 	Escribir "1 Para sumar"
 	Escribir "2 Para restar"
@@ -37,5 +38,22 @@ Funcion valor_real <- pedir_real(mensaje)
 FinFuncion
 
 Algoritmo calculadora
-	
+	Definir opc Como Entero
+	Definir valor1, valor2, resultado Como Real
+	Repetir
+		mostrar_menu
+		opc = pedir_entero("Ingrese la opción deseada")
+		Si opc = 1 O opc = 2 O opc = 3 Entonces
+			valor1 <- pedir_real("Ingrese el primer número")
+			valor2 <- pedir_real("Ingrese el segundo número")
+			resultado <- calcular(valor1, valor2, opc)
+			Escribir "Resultado: ", resultado
+		SiNo
+			Si opc = 4 Entonces
+				Escribir "Bye Bye"
+			SiNo
+				Escribir "Opción no válida"
+			FinSi
+		FinSi
+	Hasta Que opc = 4
 FinAlgoritmo
