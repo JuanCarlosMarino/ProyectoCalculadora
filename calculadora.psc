@@ -50,7 +50,7 @@ Algoritmo calculadora
 			Escribir "Resultado: ", resultado
 		SiNo
 			Si opc = 4 Entonces
-				Escribir "Bye Bye"
+				Escribir "Bye Bye :("
 			SiNo
 				Escribir "Opción no válida"
 			FinSi
