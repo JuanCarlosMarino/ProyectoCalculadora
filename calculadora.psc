@@ -10,6 +10,20 @@ Funcion mostrar_separador
 	Escribir "====================================================="
 FinFuncion
 
+Funcion resultado <- calcular (num1, num2, op)
+	Definir resultado Como Real
+	Segun op Hacer
+		1:
+			resultado <- num1 + num2
+		2:
+			resultado <- num1 - num2
+		3:
+			resultado <- num1 * num2
+		De Otro Modo:
+			resultado <- 0
+	Fin Segun
+FinFuncion
+
 Algoritmo calculadora
 	
 FinAlgoritmo
