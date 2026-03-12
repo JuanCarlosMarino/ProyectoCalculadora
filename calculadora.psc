@@ -8,7 +8,7 @@ Funcion mostrar_menu
 FinFuncion
 
 Funcion mostrar_separador
-	Escribir "====================================================="
+	Escribir "**************************************************************"
 FinFuncion
 
 Funcion resultado <- calcular (num1, num2, op)
@@ -42,17 +42,17 @@ Algoritmo calculadora
 	Definir valor1, valor2, resultado Como Real
 	Repetir
 		mostrar_menu
-		opc = pedir_entero("Ingrese la opción deseada")
+		opc = pedir_entero("Ingrese la opciÃ³n deseada")
 		Si opc = 1 O opc = 2 O opc = 3 Entonces
-			valor1 <- pedir_real("Ingrese el primer número")
-			valor2 <- pedir_real("Ingrese el segundo número")
+			valor1 <- pedir_real("Ingrese el primer nÃºmero")
+			valor2 <- pedir_real("Ingrese el segundo nÃºmero")
 			resultado <- calcular(valor1, valor2, opc)
 			Escribir "Resultado: ", resultado
 		SiNo
 			Si opc = 4 Entonces
 				Escribir "Bye Bye"
 			SiNo
-				Escribir "Opción no válida"
+				Escribir "OpciÃ³n no vÃ¡lida"
 			FinSi
 		FinSi
 	Hasta Que opc = 4
