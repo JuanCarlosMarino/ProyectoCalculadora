@@ -24,6 +24,18 @@ Funcion resultado <- calcular (num1, num2, op)
 	Fin Segun
 FinFuncion
 
+Funcion valor_entero <- pedir_entero(mensaje)
+	Definir valor_entero Como Entero
+	Escribir mensaje
+	Leer valor_entero
+FinFuncion
+
+Funcion valor_real <- pedir_real(mensaje)
+	Definir valor_real Como Real
+	Escribir mensaje
+	Leer valor_real
+FinFuncion
+
 Algoritmo calculadora
 	
 FinAlgoritmo
